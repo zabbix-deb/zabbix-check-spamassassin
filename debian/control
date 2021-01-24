@@ -1,11 +1,12 @@
 Source: zabbix-check-spamassassin
-Maintainer: Christoph Hueffelmann <christoph.hueffelmann@cubos-internet.de>
+Maintainer: Christoph Hueffelmann <chr@istoph.de>
 Section: net
 Priority: optional
 Standards-Version: 3.8.4
 
 Package: zabbix-check-spamassassin
 Architecture: all
-Depends: lsb-base, socat
+Pre-Depends: zabbix-agent
+Depends: lsb-base, socat, net-tools
 Description: zabbix check for spamassassin
  This zabbix check is for spamassassin services
