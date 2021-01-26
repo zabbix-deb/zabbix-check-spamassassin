@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 # postinst script for zabbix-check-spamassassin
 #
 # see: dh_installdeb(1)
