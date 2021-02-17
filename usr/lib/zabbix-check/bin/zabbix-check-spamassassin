@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ -S /var/run/spamd.sock ]; then
     timeout 3 socat - UNIX-CONNECT:/var/run/spamd.sock <<< "PING SPAMC/1.0" | grep -q PONG
